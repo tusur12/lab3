@@ -33,6 +33,10 @@ namespace Model
                 Number = number;
         }
 
+        /// <summary>
+        /// Вывод информации
+        /// </summary>
+        /// <returns>Строка с библиографическим описанием</returns>
         public override string Information()
         {
             return $"{Author(true)} {Name} [Текст] / {Author(false)} // {NameMag}. – {Year}. – №{Number}.";
