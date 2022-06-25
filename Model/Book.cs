@@ -42,6 +42,10 @@ namespace Model
                 Pages = pages;
         }
 
+        /// <summary>
+        /// Вывод информации
+        /// </summary>
+        /// <returns>Строка с библиографическим описанием</returns>
         public override string Information()
         {
             return $"{Author(true)} {Name} [Текст] / {Author(false)}. – {City}: {Publisher}, {Year}. – {Pages} c.";
