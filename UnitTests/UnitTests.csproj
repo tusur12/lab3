@@ -42,10 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\BookTest.cs" />
+    <Compile Include="Model\CollectionTest.cs" />
+    <Compile Include="Model\ILibraryTest.cs" />
+    <Compile Include="Model\MagazineTest.cs" />
+    <Compile Include="Model\ThesisTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{af5393a0-cb8c-44fe-a46e-ec30e17cc033}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
