@@ -33,6 +33,10 @@ namespace Model
                 City = city;
         }
 
+        /// <summary>
+        /// Вывод информации
+        /// </summary>
+        /// <returns>Строка с библиографическим описанием</returns>
         public override string Information()
         {
             return $"{Author(true)} {Name} [Текст] / {Author(false)} // {NameCol}: сб. статей. – {City}, {Year}.";
